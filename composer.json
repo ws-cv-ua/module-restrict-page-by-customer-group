@@ -1,0 +1,22 @@
+{
+    "name": "ws-cv-ua/restrict-page-by-customer-group",
+    "version": "1.0.0",
+    "description": "The page restrictions on frontend for selected customer groups",
+    "type": "magento2-module",
+    "keywords": ["magento2", "magento", "module", "cms-page", "customer"],
+    "require": {
+        "magento/framework": "*",
+        "magento/module-cms": "104.0.*"
+    },
+    "license": [
+        "Proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Wscvua\\RestrictPageByCustomerGroup\\": ""
+        }
+    }
+}

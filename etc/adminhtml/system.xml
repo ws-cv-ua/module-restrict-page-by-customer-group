@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="wscvua_tab" translate="label" sortOrder="80">
+            <label>WS-cv-ua</label>
+        </tab>
+        <section id="wscvua" translate="label" type="text" sortOrder="300" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <tab>wscvua_tab</tab>
+            <label>CMS page restriction</label>
+            <resource>Wscvua_RestrictPageByCustomerGroup::main</resource>
+            <group id="general" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+                <field id="enable" translate="label" type="select" sortOrder="10"
+                       showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <config_path>wscvua/cms_page_restrict/enable</config_path>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
